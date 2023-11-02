@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cinemagic</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/3a/64/6a/3a646af49b26264ee7d575229475c939.jpg">
+	</head>
+
+<!--BODY--->
+<body class="Subscribe">
+	<!--Header of the cinemagic webpage-->
+	<header>
+		<nav>
+        <!--CURTAIN MENU ICON-->    
+			<p class="menu-icon-style" onclick="openNav()">&#9776;MENU</p>  
+			<p class="menu-tagline-style"><i>CINEMAGIC</i></p>
+		</nav>
+	<!--CURTAIN MENU LAYER-->  
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">HOME PAGE</a>
+				<a href="mainpage.html">MAIN PAGE</a>
+				<a href="login.html">LOGIN</a>
+				<a href="Signup.html">SIGNUP</a>
+				<a href="subscribe.html">SUBSCRIPTION</a>
+				<a href="aboutUs.html">ABOUT US</a>				
+				<a href="index.html">LOGOUT</a>				
+			</div>
+		</div> 
+	</header>
+	<main>
+		<div class="images-slides">
+			<div class="slides-container">
+				<div class="slide-images">
+					<img src="images/slideshow1.jpg" alt="Slideshow Image" width= "100%" >
+					<img src="images/slideshow2.jpg" alt="Slideshow Image" width= "100%" >
+					<img src="images/slideshow3.jpg" alt="Slideshow Image" width= "100%" >
+				</div>
+			</div>
+		</div>
+		<nav>    
+			<p class="menu-tagline-style"><i>WELCOME TO CINEMAGIC</i></p>
+		</nav>
+	
+
+		<div class="login-signup-subscription-area">
+			<h1>Subscribe Now</h1>
+			<br>
+			<h2>For the perfect experience of Cinema, subscribe now !</h2>
+			<br>
+	 <form id="subscription-plan-form" action="payment.html">
+			<table class="subscriptionTable">
+        <thead>
+            <tr>
+                <th>Select</th>
+                    <th>Subscription Period</th>
+                    <th>Price</th>
+            </tr>
+        </thead>
+       <tbody>
+                <tr>
+                    <td><input type="radio" name="subscription" value="monthly"></td>
+                    <td>Monthly</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="subscription" value="quarterly"></td>
+                    <td>Quarterly</td>
+                    <td>$40</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="subscription" value="yearly"></td>
+                    <td>Yearly</td>
+                    <td>$150</td>
+                </tr>
+            </tbody>
+    </table>
+	<br>
+	<input type="submit" value="Continue to Payment">
+		</form>	
+        </div> 
+		
+	
+	</main>
+	
+	<!--Footer of the cinemagic webpage-->
+	<footer>
+		<p> Course - Website Development <br> Gurpreet Singh (2023001730)</p>
+	</footer>
+	<script src="javascript.js"></script>
+</body>
+</html>

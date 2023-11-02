@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cinemagic</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/3a/64/6a/3a646af49b26264ee7d575229475c939.jpg">
+	</head>
+
+<!--BODY--->
+<body class="Payment">
+	<!--Header of the cinemagic webpage-->
+	<header>
+		<nav>
+        <!--CURTAIN MENU ICON-->    
+			<p class="menu-icon-style" onclick="openNav()">&#9776;MENU</p>  
+			<p class="menu-tagline-style"><i>CINEMAGIC</i></p>
+		</nav>
+	<!--CURTAIN MENU LAYER-->  
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">HOME PAGE</a>
+				<a href="mainpage.html">MAIN PAGE</a>
+				<a href="login.html">LOGIN</a>
+				<a href="Signup.html">SIGNUP</a>
+				<a href="subscribe.html">SUBSCRIPTION</a>	
+				<a href="aboutUs.html">ABOUT US</a>
+				<a href="index.html">LOGOUT</a>				
+			</div>
+		</div> 
+	</header>
+	<main>
+		<div class="images-slides">
+			<div class="slides-container">
+				<div class="slide-images">
+					<img src="images/slideshow1.jpg" alt="Slideshow Image" width= "100%" >
+					<img src="images/slideshow2.jpg" alt="Slideshow Image" width= "100%" >
+					<img src="images/slideshow3.jpg" alt="Slideshow Image" width= "100%" >
+				</div>
+			</div>
+		</div>
+		<nav>    
+			<p class="menu-tagline-style"><i>WELCOME TO CINEMAGIC</i></p>
+		</nav>
+		<div class="login-signup-subscription-area">
+			<h1>Payment</h1>
+			<br>
+			<h2>Enter your card details for payment: </h2>
+			<br>
+		<form id="signup-form" action="mainpage.html">
+				<label class="passwordtext"for="cardnumber">Card Number:</label>
+				<input type="text" id="cardnumber" name="cardnumber" placeholder="Enter your card number" required>
+				<br>
+				<label class="passwordtext"for="expirationdate">Expiration Date:</label>
+				<input type="text" id="expirationdate" name="expirationdate" placeholder="MM/YYYY" required>
+				<br>
+				<label class="passwordtext"for="cvv">CVV:</label>
+				<input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+				<br><br>
+				<input type="submit" value="Submit">
+			</form>
+			
+			<p><i>Submit and enjoy the Cinemagic experience!!</i></p>
+	
+		</div>
+		
+	</main>
+	
+	<!--Footer of the cinemagic webpage-->
+	<footer>
+		<p> Course - Website Development <br> Gurpreet Singh (2023001730)</p>
+	</footer>
+	<script src="javascript.js"></script>
+</body>
+</html>

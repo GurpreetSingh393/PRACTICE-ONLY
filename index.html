@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cinemagic</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/3a/64/6a/3a646af49b26264ee7d575229475c939.jpg">	
+	</head>
+<!--BODY--->
+<body class="homepage">
+	<!--Header of the cinemagic webpage-->
+	<header>		<nav>
+        <!--CURTAIN MENU ICON-->    
+			<p class="menu-icon-style" onclick="openNav()">&#9776;MENU</p>  
+			<p class="menu-tagline-style"><b>CINEMAGIC</b></p>
+		</nav>
+	<!--CURTAIN MENU LAYER-->  
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">HOME PAGE</a>				<a href="mainpage.html">MAIN PAGE</a>
+				<a href="login.html">LOGIN</a>
+				<a href="Signup.html">SIGNUP</a>
+				<a href="subscribe.html">SUBSCRIPTION</a>
+				<a href="aboutUs.html">ABOUT US</a>
+			</div>
+		</div> 
+	</header>
+	<main>
+	<div class="images-slides">
+		<div class="slides-container">
+			<div class="slide-images">
+				<img src="images/slideshow1.jpg" alt="Slideshow Image" width= "100%" >
+				<img src="images/slideshow2.jpg" alt="Slideshow Image" width= "100%" >
+				<img src="images/slideshow3.jpg" alt="Slideshow Image" width= "100%" >
+			</div>
+		</div>
+	</div>
+		<nav>    
+			<p class="menu-tagline-style"><i>WELCOME TO CINEMAGIC</i></p>		</nav>
+		<br>
+		<h2>Enjoy watching the trailers of latest movies!!</h2>
+		<div class="video-container">
+        <div class="slides">
+            <!-- Replace the following divs with your YouTube video iframes -->
+            <div class="slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/COv52Qyctws?si=Nx7xrKZ6kVFRJrz3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="slide">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/WXdCHXtBhus?si=HgjnTO3ThAKwTZph" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                
+			</div>
+            <div class="slide">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vhwr4vc_GY0?si=hORQtuKOqsXwtvmf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+			<div class="slide">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/QJ67Pf8PLdk?si=zAoGhl9TrQ5B5zlf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="slide-controls">
+            <button id="prev-btn">
+                <i class="fas fa-chevron-left"><</i>
+            </button>
+            <button id="next-btn">
+                <i class="fas fa-chevron-right">></i>
+            </button>
+        </div>
+    </div>
+		
+      <div class="center-text">
+	  <br>
+		<h2>Enjoy unlimited movies, TV shows and many more for NZ $15/month.</h2>
+		<br>
+		<button id="login_button"> LOG IN / SIGN UP</button> <br>
+		<h3> OR </h3>
+		<button id="free_trial_button"> Start your 3-day free trial </button>
+		<br><br>
+		<h3>After your free trial, Cinemagic subscription is just NZ $15/month. </h3>
+		<h3>To subscribe now, <a href="subscribe.html">click here!</a><h3>
+		<br>
+	  </div>          
+	</main>	<!--Footer of the cinemagic webpage-->
+	<footer>
+		<p> Course - Website Development <br> Gurpreet Singh (2023001730)</p>
+	</footer>
+		<script src="javascript.js"></script>
+</body>
+</html>

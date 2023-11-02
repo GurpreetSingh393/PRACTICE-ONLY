@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<!--HEAD--->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cinemagic</title>
+		<link rel="stylesheet" href="styles.css" type="text/css">
+		<link rel="icon" type="image/jpg" href="https://i.pinimg.com/736x/3a/64/6a/3a646af49b26264ee7d575229475c939.jpg">
+	</head>
+
+<!--BODY--->
+<body class="Signup">
+	<!--Header of the cinemagic webpage-->
+	<header>
+		<nav>
+        <!--CURTAIN MENU ICON-->    
+			<p class="menu-icon-style" onclick="openNav()">&#9776;MENU</p>  
+			<p class="menu-tagline-style"><i>CINEMAGIC</i></p>
+		</nav>
+	<!--CURTAIN MENU LAYER-->  
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="index.html">HOME PAGE</a>
+				<a href="mainpage.html">MAIN PAGE</a>
+				<a href="login.html">LOGIN</a>
+				<a href="Signup.html">SIGNUP</a>
+				<a href="subscribe.html">SUBSCRIPTION</a>
+				<a href="aboutUs.html">ABOUT US</a>		
+			</div>
+		</div> 
+	</header>
+	<main>
+		<div class="images-slides">
+			<div class="slides-container">
+				<div class="slide-images">
+					<img src="images/slideshow1.jpg" alt="Slideshow Image" width= "100%" >
+					<img src="images/slideshow2.jpg" alt="Slideshow Image" width= "100%" >
+					<img src="images/slideshow3.jpg" alt="Slideshow Image" width= "100%" >
+				</div>
+			</div>
+		</div>
+		<nav>    
+			<p class="menu-tagline-style"><i>WELCOME TO CINEMAGIC</i></p>
+		</nav>
+
+        <!-- Sign Up Area -->
+
+		<div class="login-signup-subscription-area">
+			<h1>Signup</h1>
+			<br>
+			<h2>We are glad to have you here! Signup for free!</h2>
+	 
+			<form id="signup-form" action="mainpage.html">
+				<label class="passwordtext"for="fullname">Full Name:</label>
+				<input type="text" id="fullname" name="fullname" placeholder="Enter your full name (Required)" required>
+				<br>
+				<label class="passwordtext"for="dateofbirth">Date of Birth:</label>
+				<input type="text" id="dateofbirth" name="dateofbirth" placeholder="Enter your date of birth in DD/MM/YYYY format (Required)" required>
+				<br>
+				<label class="passwordtext"for="username">Email:</label>
+				<input type="text" id="username" name="username" placeholder="Enter your user name (Required)" required>
+				<br>
+				<label class="passwordtext"for="password">Password:</label>
+				<input type="password" id="password" name="password" placeholder="Enter your password (Required)" required>
+				<br>
+				<label class="passwordtext"for="password">Re-Enter Password:</label>
+				<input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password (Required)" required>
+				<br><br>
+				<input type="submit" value="Create Account">
+			</form>
+			
+			<p>Already have an account? <a href="login.html">Login</a></p>
+		</div>
+    <!-- End of Login/Sign Up Area -->  
+	</main>
+	
+	<!--Footer of the cinemagic webpage-->
+	<footer>
+		<p> Course - Website Development <br> Gurpreet Singh (2023001730)</p>
+	</footer>
+	<script src="javascript.js"></script>
+</body>
+</html>

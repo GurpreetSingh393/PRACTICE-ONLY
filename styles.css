@@ -1,0 +1,559 @@
+/*MOBILE FIRST APPROACH:
+  Every styles below is for SMALL DEVICES (smartphones)
+  screen width <= 425px
+*/
+* {/*star symbol means all HTML tags*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lightsteelblue;
+	font-family: "Times New Roman", serif;
+	margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+nav {
+	min-height: 5vh;
+	background-color: yellow;
+	font-family: Helvetica;
+	border: thin solid;
+	display: flex; /*Flex box*/
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.grid-container{
+	height:100vh;
+}
+header {
+	text-align: center;
+	font-family: Helvetica;
+	/*Flex box*/
+	flex-direction: row;
+}
+
+.menu-icon-style {
+	flex: 1;
+	font-size: 1.6em;
+	color: blue;
+	cursor: pointer;
+}
+
+.menu-tagline-style {
+	flex: 9;
+	font-size: 2.0em;
+	text-align: center;
+}
+
+/*Curtain Menu Layer Style*/
+.overlay {
+	height: 100%;
+	width: 70%;
+	display: none;/* "none": hide; "block": show*/
+	position: fixed;
+	z-index: 1;/*on top of all the other elements/layers*/
+	background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 2.0em;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+.overlay-content a.highlight {
+    color: #ff9900; /* Highlighted link color */
+    font-weight: bold; /* Highlighted link font weight */
+}
+.overlay .closebtn {
+	position: absolute;
+	top: 1.2em;
+	right: 3.0em;
+	font-size: 4.0em;
+}
+
+.overlay a {
+    font-size: 2.0em;
+}
+
+.overlay .closebtn {
+    font-size: 3.0em;
+    top: 1.0em;
+    right: 2.2em;
+}
+
+/*-------------Slide Section(index)--------------*/
+.images-slides{
+	display: flex;
+	justify-content: center;
+	background-image: url('https://t4.ftcdn.net/jpg/03/88/68/09/360_F_388680939_8PCvH9lukux5il1y7Wl0ScJHCAzV59r3.jpg');
+	background-size: cover; 
+        background-repeat: no-repeat; 
+        background-position: center center; 
+        width: 100%; /* Set the width of the div */
+}
+.images-slides .slides-container{
+	overflow: hidden;
+	max-width: 96%;
+	padding: 0;
+	border: 2px solid #B5D0FF;
+    border-radius: 2px;
+}
+.slide-images{
+	width: 100%;
+	display: flex;
+	animation: slides 16s infinite;
+}
+.slides img{
+	width: 100%;
+}
+
+@keyframes slides{
+	0% , 25%{
+		transform: translateX(0);
+	}
+	30% , 50%{
+		transform: translateX(-100%);
+	}
+	55% , 100%{
+		transform: translateX(-200%);
+	}
+}
+
+
+
+.video-container {
+  margin: 0 auto;
+  max-width: 98%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+ 
+}
+
+.slide {
+  width: 100%; /* Change min-width to width */
+  position: relative;
+    transition: transform 0.7s ease-out; /* Add a smooth transition effect for slide changes */
+ 
+}
+
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+#next-btn, #prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  color: white; 
+}
+
+#next-btn:focus, #prev-btn:focus {
+  outline: none;
+}
+
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-100%);
+   transform: translateX(-100%);
+  font-size: 60px;
+  color: white; 
+}
+
+.center-text {
+	min-height: 50vh;
+    text-align: center;
+	line-height: 1.8;
+	font-family: Comic Sans MS;	
+}
+
+.homepage h2 {
+    text-align: center;
+	font-family: Comic Sans MS;	
+	color: #0607b6;
+	font-size: 22px;
+}
+
+/*Login button on the home page*/
+#login_button {
+	display: inline-block;
+	background-color: #FAD7AC;
+	padding: 8px 15px;
+	text-align: center;
+	border: thin solid; 
+	border-radius: 10px;
+	font-size: 20px; 
+	font-family: Comic Sans MS;
+	font-weight: bold;
+}
+
+/*Start the free trail button on the home page*/
+#free_trial_button {
+	display: inline-block;
+	background-color: #BDE4FF;
+	padding: 8px 15px;
+	text-align: center;
+	border: thin solid; 
+	border-radius: 10px;
+	font-size: 20px; 
+	font-family: Comic Sans MS;
+	font-weight: bold;
+}
+
+/*Footer of the webpages*/
+footer {
+	height: 10vh;
+	background-color: #B5D0FF;
+	border-top: thin solid;
+	/*Centralize the content both vertically and horizontally*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    z-index: 2;
+}
+
+footer p {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*--Main page styling--*/
+.container {
+    display: flex;
+    width: 98vw;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+
+.Mainpage h2 {
+	text-decoration: underline;
+	font-family: Comic Sans MS;	
+}
+
+.grid-item { /* Distribute space equally among items */
+	background-color: #ffffff;
+	padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    text-align: center;
+	margin-bottom: 20px;
+	margin: 0 20px;
+	margin-bottom: 25px;
+	display: block;
+	min-width: 100px;
+	transition: transform 0.3s ease-in-out 0s, box-shadow 0.3s ease-in-out 0s;
+	border-radius:10px;
+}
+.grid-item:hover {
+  transform: scale(1.04); /* Increase the size by 10% (adjust the value as needed) */
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.grid-item img {
+    width: 100%; /* Force the image to take the full width of its container */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-item p {
+	font-size: 20pt;
+	font-family: Comic Sans MS;	
+}
+
+.menu-tagline-style {
+	font-size: 2.0em;
+	text-align: center;
+	background-color: yellow;
+	font-family: Helvetica;
+}
+
+.search_input {
+	text-align: right;
+    height: 30px; 
+}
+
+/* Increase the size of the input field */
+#searchInput {
+    height: 100%; /* Input field takes up the full height of the parent div */
+}
+
+
+/* Style for the login/sign-up area */
+.login-signup-subscription-area {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 2px solid #aaa3a3;
+    border-radius: 5px;
+	margin: 50px auto; /* Center horizontally by setting left and right margins to auto */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	width: 300px;
+	height: 50;
+	font-family:Sans-Serif;
+	
+}
+
+.passwordtext {
+	text-align:left;	
+}
+
+.login-signup-subscription-area h1{
+    font-size: 24px;
+    color: black;
+}
+
+.login-signup-subscription-area h2 {
+    font-size: 20px;
+    color: black;
+	text-align: left;
+}
+
+.login-signup-subscription-area form {
+    margin: 20px 0;
+}
+
+.login-signup-subscription-area label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.login-signup-subscription-area input[type="text"],
+.login-signup-subscription-area input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.login-signup-subscription-area input[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-signup-subscription-area input[type="submit"]:hover {
+    background-color: #005aa1;
+}
+
+.login-signup-subscription-area a {
+    text-decoration: none;
+    color: #0078d4;
+}
+
+.login-signup-subscription-area a:hover {
+    text-decoration: underline;
+}
+
+
+
+.subscriptionTable {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+.subscriptionTable table, th, td {
+            border: 1px solid black;
+        }
+
+.subscriptionTable th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+.subscriptionTable th {
+            background-color: #f2f2f2;
+        }
+
+.next-button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Add space between input fields and the button */
+    margin-bottom: 20px; /* Add space between the button and the footer */
+    transition: background-color 0.3s;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+.next-button:hover {
+    background-color: #005aa1; /* Change button color on hover */
+}
+
+
+/*------------------------*/
+/*Styles changes for MEDIUM DEVICES: iPads or Tablets
+  screen width: 426 px -> 768px 
+*/
+@media only screen and (min-width: 426px) {
+body {
+background-color: #E6E6E6;
+}
+	
+.article-style {
+width: 45%;
+}
+
+
+.images-slides .slides-container{
+	max-width: 56%;
+	border: 2px solid #B5D0FF;
+    border-radius: 2px;
+}
+
+.grid-item {	
+    flex: 1; 
+	max-width: 22vw;  /* Limit the maximum width of each item to 20% of the viewport width */
+}
+
+.grid-item img {
+    width: 80%; 
+}
+
+.grid-item p {
+	font-size: 10pt;
+}
+.container {
+	display: flex;
+    width: 98vw; /* Ensures it spans the entire width of the viewport */
+    overflow: hidden; /* Hide any potential overflow */
+    flex-direction: row;
+    justify-content: space-between;
+	flex-wrap: nowrap;
+}
+#item-list {
+display: grid;
+grid-template-columns: 1fr 1fr;/*2 columns*/
+} 
+.search_input {
+    height: 20px; 
+}
+
+.login-signup-subscription-area {
+	width: 500px;
+	background-color: #b0c4de;
+}
+.video-container {
+  max-width: 50%;
+}
+
+}
+
+/*------------------------*/
+/*Styles changes for BIG DEVICES: PC or desktops
+  screen width: >= 769px 
+*/
+@media only screen and (min-width: 769px) {
+body {
+background-color: #E6E6E6;
+}
+	
+.article-style {
+width: 30%;
+} 
+
+
+.images-slides .slides-container{
+	max-width: 50%;
+	border: 2px solid #B5D0FF;
+    border-radius: 5px;
+}
+
+
+.grid-item img {
+    width: 60%; 
+}
+.grid-item {	
+    flex: 1; 
+	max-width: 22vw;  /* Limit the maximum width of each item to 20% of the viewport width */
+}
+.grid-item p {
+	font-size: 12pt;
+}
+.container {
+	display: flex;
+    width: 98vw; /* Ensures it spans the entire width of the viewport */
+    overflow: hidden; /* Hide any potential overflow */
+    flex-direction: row;
+    justify-content: space-between;
+	flex-wrap: nowrap;
+}
+#item-list {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;/*3 columns*/
+ }
+.search_input {
+    height: 20px; 
+}
+
+.login-signup-subscription-area {
+	width: 800px;
+	background-color: #b0c4de;
+}
+
+
+.video-container {
+  max-width: 44%;
+}
+
+}
+
+
+
+
